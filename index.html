@@ -30,13 +30,17 @@
     <nav>
       <img src="/assets/images/logo.svg" alt="">
       <div class="drop">
-        <button id="dropbtn"><img src="/assets/images/icon-menu.svg" alt=""></button>
+        <button id="dropbtn" onclick="dropdown()"><img src="/assets/images/icon-menu.svg" alt=""></button>
         <div id="dropContainer">
-          <a href="#">Home</a>
-          <a href="#">New</a>
-          <a href="#">Popular</a>
-          <a href="#">Trending</a>
-          <a href="#">Categories</a>
+          <div class="back"></div>
+          <button id="cancelbtn" onclick="canceldown()"><img src="/assets/images/icon-menu-close.svg" alt=""></button>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -99,6 +103,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

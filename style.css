@@ -21,7 +21,7 @@ nav {
     margin-bottom: 20px;
 }
 
-#dropbtn {
+#dropbtn,#cancelbtn{
     display: none;
 }
 
@@ -30,12 +30,62 @@ nav {
     cursor: pointer;
 }
 
-#dropContainer>a {
+.links >a {
     text-decoration: none;
     color: hsl(236, 13%, 42%);
     margin-right: 30px;
 }
 
-#dropContainer>a:hover {
+.links >a:hover {
     color: hsl(35, 77%, 62%);
+}
+
+@media screen and (max-width:520px) {
+    body{
+        padding: 20px;
+    }
+    #dropbtn{
+        background-color: transparent;
+        border: none;
+    }
+    #dropbtn,#cancelbtn{
+        display: inline;
+    }
+    #dropContainer{
+        display: none;
+    }
+    #dropContainer.active{
+        background-color: hsl(36, 100%, 99%);
+        padding: 20px;
+        top: 0;
+        right: 0;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 70vw;
+        height: 100vh;
+    }
+    .links{
+        margin-top: 120px;
+    }
+    .links > a{
+        display: block;
+        margin-bottom: 30px;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+    }   
+    .back{
+        width: 30vw;
+        position: absolute;
+        left: -30vw;
+        top: 0;
+        height: 100vh;
+        background-color: hsla(240, 100%, 5%,0.5);
+    }
+    #cancelbtn{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right:20px;
+    }
 }
