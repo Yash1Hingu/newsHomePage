@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    width: 100vw;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dropbtn {
+    display: none;
+}
+
+.drop {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#dropContainer>a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    margin-right: 30px;
+}
+
+#dropContainer>a:hover {
+    color: hsl(35, 77%, 62%);
+}
