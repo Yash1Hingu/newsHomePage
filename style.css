@@ -18,7 +18,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #dropbtn,#cancelbtn{
@@ -88,4 +88,100 @@ nav {
         position: absolute;
         right:20px;
     }
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.bigHeader{
+    grid-column: 1/3;
+}
+.bigHeader img{
+    width: 100%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.content h1{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.Box p{
+    color: hsl(236, 13%, 42%);
+    font-size: 20px;
+    line-height: 1.5;
+}
+.Box button{
+    background-color:hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    padding: 15px 20px;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.Box button:hover{
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+}
+aside{
+    grid-column: 3/-1;
+    background-color: hsl(240, 100%, 5%);
+    padding: 40px 30px;
+    color: hsl(36, 100%, 99%);
+}
+aside h1{
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+aside ul{
+    list-style: none;
+}
+aside ul > li{
+    margin: 20px 0;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+aside ul li > h4{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+aside ul li > h4:hover{
+    color: hsl(35, 77%, 62%);
+}
+aside ul li > p{
+    color: hsl(236, 13%, 60%);
+    margin-bottom: 20px;
+}
+#templeteBox{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    grid-column: 1/-1;
+}
+.templete{
+    display: flex;
+    gap: 20px;
+}
+.templete img{
+    width: 150px;
+}
+.templete .info h3{
+    color: hsl(236, 13%, 60%);
+    font-size: 3rem;
+}
+.info h4{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+.info p{
+    color: hsl(236, 13%, 42%);
+    line-height: 1.7;
 }
